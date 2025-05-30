@@ -1,11 +1,13 @@
 export const Features = () => {
   return (
     <div className="bg-[#333348] flex flex-col items-center">
-      <div className="flex bg-[#D0A1F19C] items-center gap-2 py-2 px-3 rounded-full mb-8">
+      <div className="flex bg-[#D0A1F19C] items-center gap-2 py-2 px-3 rounded-full mb-6">
         <div className="h-[8px] w-[8px] bg-purple-950 rounded-full"></div>
-        <div className="text-[17px] font-bold font-sans">Features</div>
+        <div className="text-[12px] font-bold font-sans">
+          Build Using NextJs
+        </div>
       </div>
-      <div className="text-white sm:text-[50px] text-[22px] text-center max-w-300 font-serif font-bold sm:leading-16">
+      <div className="text-white sm:text-[38px] text-[22px] text-center max-w-250 font-serif font-bold sm:leading-14">
         Explore the powerful features designed to enhance your knowledge
         management
       </div>
