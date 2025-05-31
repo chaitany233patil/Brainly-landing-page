@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @media (min-width: 1137px) {
   .hero-container {
     display: flex;
@@ -24,4 +28,17 @@
       rgba(48, 48, 66, 0.1)
     );
   }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.hero-image {
+  animation: slideInFromLeft 0.5s ease-out forwards;
 }

@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div className="bg-[#333348] flex justify-center p-3">
+    <div className="bg-[#333348] flex justify-center p-3 mb-40">
       <div className="mt-20 max-w-[1000px] flex flex-col items-center p-20 custom-radial-bg">
         <div className="flex bg-[#D0A1F19C] items-center gap-2 py-2 px-3 rounded-full mb-6">
           <div className="h-[8px] w-[8px] bg-purple-950 rounded-full"></div>
@@ -15,7 +15,7 @@ export const Contact = () => {
           Join thousands of users who are transforming their knowledge
           management with Second Brain.
         </div>
-        <button className="font-sans text-xl sm:text-xl bg-purple-700 text-white py-2 px-5 rounded-full font-bold mt-10">
+        <button className="font-sans text-xl sm:text-[16px] bg-purple-700 text-white py-2 px-5 rounded-full font-bold mt-8 cursor-pointer">
           Get Started
         </button>
       </div>
