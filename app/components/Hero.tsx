@@ -18,11 +18,11 @@ export const Hero = () => {
           <div className="text-[78px] sm:text-[71px] font-bold text-center sm:text-start leading-23 sm:leading-21 font-sans bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-500">
             Your Second Brain
           </div>
-          <div className="text-[20px] font-bold text-[#B0A8B2] text-center sm:text-start sm:text-[15px] mt-2 leading-7 ">
+          <div className="text-[20px] font-bold text-[#B0A8B2] text-center sm:text-start sm:text-[16px] mt-2 leading-7 ">
             Capture, Organize and connect your knowledge effortlessly. store
             Video, Text Snippets, Tweets and more all searchable with AI agent.
           </div>
-          <button className="font-sans text-xl sm:text-[16px] bg-purple-700 text-white py-2 px-5 rounded-full font-bold mt-8 cursor-pointer">
+          <button className="font-sans text-xl sm:text-[16px] bg-purple-700 hover:bg-purple-800 text-white py-2 px-5 rounded-full font-bold mt-8 cursor-pointer">
             Get Started
           </button>
         </div>

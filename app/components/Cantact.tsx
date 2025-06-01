@@ -15,7 +15,7 @@ export const Contact = () => {
           Join thousands of users who are transforming their knowledge
           management with Second Brain.
         </div>
-        <button className="font-sans text-xl sm:text-[16px] bg-purple-700 text-white py-2 px-5 rounded-full font-bold mt-8 cursor-pointer">
+        <button className="font-sans text-xl sm:text-[16px] bg-purple-700 hover:bg-purple-800 text-white py-2 px-5 rounded-full font-bold mt-8 cursor-pointer">
           Get Started
         </button>
       </div>

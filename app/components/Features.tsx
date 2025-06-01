@@ -33,7 +33,7 @@ export const Features = () => {
               ref={ref}
               initial={{ opacity: 0, x: -50 }}
               animate={controls}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               className="my-box flex flex-col items-center w-[300px] p-5 justify-center"
             >
               <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">
@@ -55,7 +55,7 @@ export const Features = () => {
               ref={ref}
               initial={{ opacity: 0, x: 50 }}
               animate={controls}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               className="flex flex-col items-center w-[300px] p-5 justify-center"
             >
               <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">
@@ -77,7 +77,7 @@ export const Features = () => {
               ref={ref}
               initial={{ opacity: 0, x: -50 }}
               animate={controls}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               className="flex flex-col items-center w-[300px] p-5 justify-center"
             >
               <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">
@@ -99,7 +99,7 @@ export const Features = () => {
               ref={ref}
               initial={{ opacity: 0, x: 50 }}
               animate={controls}
-              transition={{ duration: 0.2 }}
+              transition={{ duration: 0.5 }}
               className="flex flex-col items-center w-[300px] p-5 justify-center"
             >
               <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">

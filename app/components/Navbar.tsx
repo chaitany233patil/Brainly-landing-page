@@ -12,8 +12,11 @@ export const Navbar = () => {
         </div>
       </div>
       <div>
-        <Link href={}>
-          <button className="flex gap-1 text-md items-center justify-center rounded bg-[#560094] text-gray-100 sm:px-5 sm:py-2 p-2 font-semibold inset-shadow-sm inset-shadow-purple-600">
+        <Link
+          href={"https://github.com/chaitany233patil/Brainly-landing-page"}
+          target="_blank"
+        >
+          <button className="flex gap-1 text-md items-center justify-center rounded bg-[#560094] text-gray-100 sm:px-5 sm:py-2 p-2 font-semibold inset-shadow-sm inset-shadow-purple-600 cursor-pointer">
             <GithubIcon />
             star us on github
           </button>
