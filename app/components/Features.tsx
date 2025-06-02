@@ -1,6 +1,7 @@
 "use client";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { BookMarked, Bot, Link, NotebookPen } from "lucide-react";
 
 export const Features = () => {
   const ref = useRef(null);
@@ -36,14 +37,15 @@ export const Features = () => {
               transition={{ duration: 0.5 }}
               className="my-box flex flex-col items-center w-[300px] p-5 justify-center"
             >
-              <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">
-                AI
-              </p>
+              <div className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
+                <Bot />
+              </div>
               <div className="text-[22px] font-bold text-white text-center">
                 AI-Power Search
               </div>
               <div className="text-[15px] text-[#786969] text-center font-bold">
-                Quickly find any piece of content with our inteligent
+                Quickly find any piece of content with our inteligent search
+                agent.
               </div>
             </motion.div>
           </div>
@@ -58,14 +60,14 @@ export const Features = () => {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center w-[300px] p-5 justify-center"
             >
-              <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">
-                AI
+              <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
+                <BookMarked />
               </p>
               <div className="text-[22px] font-bold text-white text-center">
-                AI-Power Search
+                Versatile Content Storage
               </div>
               <div className="text-[15px] text-[#786969] text-center font-bold">
-                Quickly find any piece of content with our inteligent
+                Store Videos, text snippets, tweets, and more in one place.
               </div>
             </motion.div>
           </div>
@@ -80,14 +82,14 @@ export const Features = () => {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center w-[300px] p-5 justify-center"
             >
-              <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">
-                AI
-              </p>
+              <div className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
+                <Link />
+              </div>
               <div className="text-[22px] font-bold text-white text-center">
-                AI-Power Search
+                Seamless Connections
               </div>
               <div className="text-[15px] text-[#786969] text-center font-bold">
-                Quickly find any piece of content with our inteligent
+                Easily link related content to build a network of knowledge.
               </div>
             </motion.div>
           </div>
@@ -102,14 +104,14 @@ export const Features = () => {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center w-[300px] p-5 justify-center"
             >
-              <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-1 px-3 rounded-xl ring-10 ring-[#00000040]">
-                AI
-              </p>
+              <div className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
+                <NotebookPen />
+              </div>
               <div className="text-[22px] font-bold text-white text-center">
-                AI-Power Search
+                Smart Notes
               </div>
               <div className="text-[15px] text-[#786969] text-center font-bold">
-                Quickly find any piece of content with our inteligent
+                Create and manage smart notes that adapt to your workflow.
               </div>
             </motion.div>
           </div>
