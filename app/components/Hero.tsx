@@ -1,7 +1,6 @@
 "use client";
 
 import { Navbar } from "./Navbar";
-import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
