@@ -9,7 +9,10 @@ export const Hero = () => {
       <div className="hero-container mt-5 overflow-hidden p-4  ">
         <div className="flex flex-col items-center sm:items-start p-2 sm:pl-23">
           <div className="flex bg-[#D0A1F19C] items-center gap-2 py-1 px-3 rounded-full mb-6">
-            <div className="h-[8px] w-[8px] bg-purple-950 rounded-full"></div>
+            <span className="relative flex size-3 items-center justify-center">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-900 opacity-75"></span>
+              <span className="relative inline-flex size-2 rounded-full bg-purple-950"></span>
+            </span>
             <div className="text-[12px] font-bold font-sans">
               Build Using NextJs
             </div>

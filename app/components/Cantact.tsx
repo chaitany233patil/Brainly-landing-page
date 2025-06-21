@@ -3,10 +3,11 @@ export const Contact = () => {
     <div className="bg-[#333348] flex justify-center p-3 mb-40">
       <div className="mt-20 max-w-[1000px] flex flex-col items-center p-20 custom-radial-bg">
         <div className="flex bg-[#D0A1F19C] items-center gap-2 py-2 px-3 rounded-full mb-6">
-          <div className="h-[8px] w-[8px] bg-purple-950 rounded-full"></div>
-          <div className="text-[12px] font-bold font-sans">
-            Build Using NextJs
-          </div>
+          <span className="relative flex size-3 items-center justify-center">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-900 opacity-75"></span>
+            <span className="relative inline-flex size-2 rounded-full bg-purple-950"></span>
+          </span>
+          <div className="text-[12px] font-bold font-sans">Join us</div>
         </div>
         <div className="text-white text-[40px] sm:text-[38px] text-center leading-13 sm:leading-12 max-w-[600px]">
           Ready to Supercharge Your Knowledge?
