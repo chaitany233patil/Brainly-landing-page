@@ -8,17 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 1137px) {
-  .hero-container {
-    display: flex;
-  }
-
-  img {
-    margin-left: 190px;
-    margin-top: 0;
-  }
-}
-
 @layer utilities {
   .custom-radial-bg {
     background: radial-gradient(

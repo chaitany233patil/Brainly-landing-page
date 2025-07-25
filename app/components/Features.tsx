@@ -2,6 +2,7 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { BookMarked, Bot, Link, NotebookPen } from "lucide-react";
+import { Indicator } from "./Indicator";
 
 export const Features = () => {
   const ref = useRef(null);
@@ -15,22 +16,22 @@ export const Features = () => {
   }, [inView, controls]);
 
   return (
-    <div className="bg-[#333348] flex flex-col items-center">
-      <div className="flex bg-[#D0A1F19C] items-center gap-2 py-2 px-3 rounded-full mb-6">
-        <span className="relative flex size-3 items-center justify-center">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-purple-900 opacity-75"></span>
-          <span className="relative inline-flex size-2 rounded-full bg-purple-950"></span>
-        </span>
-        <div className="text-[12px] font-bold font-sans">Features</div>
+    <div className="flex flex-col items-center mt-20">
+      <Indicator Text={"Features"} />
+      <div className="bg-clip-text text-transparent bg-gradient-to-b from-purple-200/50 to-neutral-400 font-medium sm:text-5xl text-[22px] text-center max-w-250 font-serif sm:leading-13 mt-8">
+        Explore powerful features that <br /> elevate your{" "}
+        <span className="ml-2 font-subheading italic">knowledge</span>
       </div>
-      <div className="text-white sm:text-[32px] text-[22px] text-center max-w-250 font-serif font-bold sm:leading-11">
-        Explore the powerful features designed to enhance your knowledge
-        management
-      </div>
-
-      <div className="md:grid md:grid-cols-2 mt-10">
-        <div className="md:pr-[2px] bg-gradient-to-b from-[#333348] via-white to-[#333348]">
-          <div className="flex flex-col items-center justify-center px-8 bg-[#333348] py-20 w-[100%] h-[100%]">
+      <p className="text-purple-100/70 text-xl mt-8 text-center">
+        From intelligent search to seamless <br /> organization — everything you
+        need to build your second brain.
+      </p>
+      <div className="relative">
+        <div className="w-full mt-10">
+          <img src={"/grid-lines.svg"} alt="grid image" className="mx-auto" />
+        </div>
+        <div className="absolute top-0 md:grid md:grid-cols-2">
+          <div className="flex flex-col items-center justify-center px-8 py-20 w-[100%] h-[100%]">
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -50 }}
@@ -50,10 +51,8 @@ export const Features = () => {
               </div>
             </motion.div>
           </div>
-        </div>
 
-        <div className="md:pb-[2px] bg-gradient-to-r from-[#333348] via-white to-[#333348]">
-          <div className="b flex flex-col items-center justify-center px-8 py-20 bg-[#333348] w-[100%] h-[100%]">
+          <div className="b flex flex-col items-center justify-center w-[100%] h-[100%]">
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: 50 }}
@@ -72,10 +71,8 @@ export const Features = () => {
               </div>
             </motion.div>
           </div>
-        </div>
 
-        <div className="md:pt-[2px] bg-gradient-to-r from-[#333348] via-white to-[#333348]">
-          <div className="c flex flex-col items-center justify-center px-8 bg-[#333348] py-20 w-[100%] h-[100%]">
+          <div className="c flex flex-col items-center justify-center px-8 py-20 w-[100%] h-[100%]">
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -50 }}
@@ -94,18 +91,16 @@ export const Features = () => {
               </div>
             </motion.div>
           </div>
-        </div>
 
-        <div className="md:pl-[2px] bg-gradient-to-b from-[#333348] via-white to-[#333348]">
-          <div className="d flex flex-col items-center justify-center px-30 bg-[#333348] py-20 w-[100%] h-[100%]">
+          <div className="d flex flex-col items-center justify-center w-[100%] h-[100%]">
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: 50 }}
               animate={controls}
               transition={{ duration: 0.5 }}
-              className="flex flex-col items-center w-[300px] p-5 justify-center"
+              className="flex flex-col items-center w-[300px] justify-center"
             >
-              <div className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
+              <div className="text-[22px] mb-3 font-bold text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
                 <NotebookPen />
               </div>
               <div className="text-[22px] font-bold text-white text-center">
