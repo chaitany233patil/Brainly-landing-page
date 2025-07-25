@@ -9,6 +9,32 @@ export const Features = () => {
   const inView = useInView(ref, { once: true });
   const controls = useAnimation();
 
+  const Fetures = [
+    {
+      icon: Bot,
+      title: "AI-Power Search",
+      description:
+        "Quickly find any piece of content with our inteligent search agent",
+    },
+    {
+      icon: BookMarked,
+      title: "Versatile Content Storage",
+      description:
+        "Store Videos, text snippets, tweets, and more in one place.",
+    },
+    {
+      icon: Link,
+      title: "Seamless Connections",
+      description:
+        "Easily link related content to build a network of knowledge.",
+    },
+    {
+      icon: NotebookPen,
+      title: "Smart Notes",
+      description: "Create and manage smart notes that adapt to your workflow.",
+    },
+  ];
+
   useEffect(() => {
     if (inView) {
       controls.start({ opacity: 1, x: 0 });
@@ -26,91 +52,39 @@ export const Features = () => {
         From intelligent search to seamless <br /> organization — everything you
         need to build your second brain.
       </p>
-      <div className="relative">
-        <div className="w-full mt-10">
-          <img src={"/grid-lines.svg"} alt="grid image" className="mx-auto" />
+      <div className="relative flex justify-center">
+        <div className="w-full mt-4">
+          <img
+            src={"/grid-lines.svg"}
+            alt="grid image"
+            className="mx-auto w-270 h-auto"
+          />
         </div>
-        <div className="absolute top-0 md:grid md:grid-cols-2">
-          <div className="flex flex-col items-center justify-center px-8 py-20 w-[100%] h-[100%]">
-            <motion.div
-              ref={ref}
-              initial={{ opacity: 0, x: -50 }}
-              animate={controls}
-              transition={{ duration: 0.5 }}
-              className="my-box flex flex-col items-center w-[300px] p-5 justify-center"
+        <div className="absolute top-28 grid grid-cols-2 gap-30">
+          {Fetures.map((feature) => (
+            <div
+              key={feature.title}
+              className="flex flex-col items-center justify-center w-[100%] h-[100%] z-20"
             >
-              <div className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
-                <Bot />
-              </div>
-              <div className="text-[22px] font-bold text-white text-center">
-                AI-Power Search
-              </div>
-              <div className="text-[15px] text-[#786969] text-center font-bold">
-                Quickly find any piece of content with our inteligent search
-                agent.
-              </div>
-            </motion.div>
-          </div>
-
-          <div className="b flex flex-col items-center justify-center w-[100%] h-[100%]">
-            <motion.div
-              ref={ref}
-              initial={{ opacity: 0, x: 50 }}
-              animate={controls}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col items-center w-[300px] p-5 justify-center"
-            >
-              <p className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
-                <BookMarked />
-              </p>
-              <div className="text-[22px] font-bold text-white text-center">
-                Versatile Content Storage
-              </div>
-              <div className="text-[15px] text-[#786969] text-center font-bold">
-                Store Videos, text snippets, tweets, and more in one place.
-              </div>
-            </motion.div>
-          </div>
-
-          <div className="c flex flex-col items-center justify-center px-8 py-20 w-[100%] h-[100%]">
-            <motion.div
-              ref={ref}
-              initial={{ opacity: 0, x: -50 }}
-              animate={controls}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col items-center w-[300px] p-5 justify-center"
-            >
-              <div className="text-[22px] mb-3 font-bold text-purple-950 text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
-                <Link />
-              </div>
-              <div className="text-[22px] font-bold text-white text-center">
-                Seamless Connections
-              </div>
-              <div className="text-[15px] text-[#786969] text-center font-bold">
-                Easily link related content to build a network of knowledge.
-              </div>
-            </motion.div>
-          </div>
-
-          <div className="d flex flex-col items-center justify-center w-[100%] h-[100%]">
-            <motion.div
-              ref={ref}
-              initial={{ opacity: 0, x: 50 }}
-              animate={controls}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col items-center w-[300px] justify-center"
-            >
-              <div className="text-[22px] mb-3 font-bold text-center bg-[#A161D057] py-2.5 px-3 rounded-xl ring-10 ring-[#00000040]">
-                <NotebookPen />
-              </div>
-              <div className="text-[22px] font-bold text-white text-center">
-                Smart Notes
-              </div>
-              <div className="text-[15px] text-[#786969] text-center font-bold">
-                Create and manage smart notes that adapt to your workflow.
-              </div>
-            </motion.div>
-          </div>
+              <motion.div
+                ref={ref}
+                initial={{ opacity: 0, x: 0 }}
+                animate={controls}
+                transition={{ duration: 0 }}
+                className="my-box flex flex-col items-center w-[300px] justify-center"
+              >
+                <div className="text-[22px] p-2 mb-10 font-bold text-purple-950 text-center bg-purple-600/90 rounded-lg ring-16  ring-purple-500/15">
+                  <feature.icon className="size-6" />
+                </div>
+                <div className="text-xl font-bold  text-neutral-200/80 text-center mb-2">
+                  {feature.title}
+                </div>
+                <div className="text-[15px] text-[#786969] text-center">
+                  {feature.description}
+                </div>
+              </motion.div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
