@@ -11,7 +11,7 @@ export const Hero = () => {
           <div className="text-[78px] sm:text-[75px] font-[510] text-center sm:text-start leading-23 sm:leading-19 font-sans bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-600 mt-6">
             Your <br /> Second Brain
           </div>
-          <div className=" text-purple-100/70 text-center font-normal sm:text-start sm:text-[18px] mt-4 leading-7">
+          <div className=" text-purple-100/70 text-center font-normal sm:text-start sm:text-[18px] mt-4 leading-7 tracking-wider">
             Capture, organize, and seamlessly connect your knowledge in one
             place. Effortlessly store videos, text snippets, tweets, articles,
             and more all intelligently searchable with the power of an AI agent.

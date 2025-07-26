@@ -44,10 +44,15 @@ export const Features = () => {
   return (
     <div className="flex flex-col items-center mt-20">
       <Indicator Text={"Features"} />
-      <div className="bg-clip-text text-transparent bg-gradient-to-b from-purple-200/50 to-neutral-400 font-medium sm:text-5xl text-[22px] text-center max-w-250 font-serif sm:leading-13 mt-8">
+      <motion.div
+        initial={{ y: 20 }}
+        animate={controls}
+        transition={{ duration: 0.5 }}
+        className="bg-clip-text text-transparent bg-gradient-to-b from-purple-200/50 to-neutral-400 font-medium sm:text-5xl text-[22px] text-center max-w-250 font-serif sm:leading-13 mt-8"
+      >
         Explore powerful features that <br /> elevate your{" "}
         <span className="ml-2 font-subheading italic">knowledge</span>
-      </div>
+      </motion.div>
       <p className="text-purple-100/70 text-xl mt-8 text-center">
         From intelligent search to seamless <br /> organization — everything you
         need to build your second brain.
@@ -61,16 +66,16 @@ export const Features = () => {
           />
         </div>
         <div className="absolute top-28 grid grid-cols-2 gap-30">
-          {Fetures.map((feature) => (
+          {Fetures.map((feature, index) => (
             <div
               key={feature.title}
               className="flex flex-col items-center justify-center w-[100%] h-[100%] z-20"
             >
               <motion.div
                 ref={ref}
-                initial={{ opacity: 0, x: 0 }}
+                initial={{ opacity: 0, x: index % 2 ? -20 : 20 }}
                 animate={controls}
-                transition={{ duration: 0 }}
+                transition={{ duration: 0.5 }}
                 className="my-box flex flex-col items-center w-[300px] justify-center"
               >
                 <div className="text-[22px] p-2 mb-10 font-bold text-purple-950 text-center bg-purple-600/90 rounded-lg ring-16  ring-purple-500/15">
