@@ -28,15 +28,17 @@ export const Contact = () => {
           Join thousands of users who are transforming their knowledge
           management with Second Brain.
         </motion.div>
-        <motion.button
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="font-sans text-lg sm:text-[16px] bg-purple-600 hover:bg-purple-800 text-white py-2 px-5 rounded-lg mt-8 cursor-pointer"
-        >
-          Get Started Now
-        </motion.button>
+        <a href="https://brainly-phi.vercel.app/signup">
+          <motion.button
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="font-sans text-lg sm:text-[16px] bg-purple-600 hover:bg-purple-800 text-white py-2 px-5 rounded-lg mt-8 cursor-pointer"
+          >
+            Get Started Now
+          </motion.button>
+        </a>
       </div>
     </div>
   );
