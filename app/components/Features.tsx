@@ -48,24 +48,24 @@ export const Features = () => {
         initial={{ y: 20 }}
         animate={controls}
         transition={{ duration: 0.5 }}
-        className="bg-clip-text text-transparent bg-gradient-to-b from-purple-200/50 to-neutral-400 font-medium sm:text-5xl text-[22px] text-center max-w-250 font-serif sm:leading-13 mt-8"
+        className="bg-clip-text text-transparent bg-gradient-to-b from-purple-200/50 to-neutral-400 font-medium sm:text-5xl text-3xl text-center max-w-250 font-serif sm:leading-13 mt-8 px-2"
       >
         Explore powerful features that <br /> elevate your{" "}
         <span className="ml-2 font-subheading italic">knowledge</span>
       </motion.div>
-      <p className="text-purple-100/70 text-xl mt-8 text-center">
+      <p className="text-purple-100/70 text-lg sm:text-xl mt-8 text-center leading-6 sm:leading-0">
         From intelligent search to seamless <br /> organization — everything you
         need to build your second brain.
       </p>
       <div className="relative flex justify-center">
-        <div className="w-full mt-4">
+        <div className="w-full mt-4 hidden lg:block">
           <img
             src={"/grid-lines.svg"}
             alt="grid image"
             className="mx-auto w-270 h-auto"
           />
         </div>
-        <div className="absolute top-28 grid grid-cols-2 gap-30">
+        <div className="lg:absolute mt-20 lg:top-28 grid grid-cols-1 md:grid-cols-2 gap-30">
           {Fetures.map((feature, index) => (
             <div
               key={feature.title}

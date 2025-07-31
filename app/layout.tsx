@@ -21,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en">
       <body
-        className={`bg-[linear-gradient(to_bottom,_#9405fa_0%,_#000_9%)]  bg-opacity-10 antialiased`}
+        className={`${poppins.variable} bg-[linear-gradient(to_bottom,_#9405fa_0%,_#000_9%)]  bg-opacity-10 antialiased`}
       >
         <div className="h-70 bg-black/50">
           <Navbar />
