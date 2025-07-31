@@ -1,7 +1,7 @@
 "use client";
 
 import { Indicator } from "./Indicator";
-import { Typewriter } from "./Typewriter";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
@@ -11,24 +11,36 @@ export const Hero = () => {
           <div className="flex justify-center sm:justify-start">
             <Indicator Text={"Build Using NextJs"} />
           </div>
-          <div className="text-5xl sm:text-[75px] font-[510] text-center sm:text-start leading-14 sm:leading-19 font-sans bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-600 mt-6">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-5xl sm:text-[75px] font-[510] text-center sm:text-start leading-14 sm:leading-19 font-sans bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-600 mt-6"
+          >
             Your Second Brain
-          </div>
-          <div className="tracking-wide text-purple-100/70 text-center font-normal sm:text-start mt-4 leading-6">
-            <Typewriter
-              text={`Capture, organize, and seamlessly connect your knowledge in one
-            place. Effortlessly store videos, text snippets, tweets, articles,
-            and more all intelligently searchable with the power of an AI agent.`}
-            />
-          </div>
-          <div className="flex justify-center sm:justify-start">
-            <button className="text-lg tracking-wider sm:text-[14px] bg-purple-700 hover:bg-purple-800 text-white py-2 px-5 rounded-lg mt-8 cursor-pointer shadow-sm shadow-purple-600">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="tracking-wide text-lg text-purple-100/70 text-center font-normal sm:text-start mt-4 leading-6"
+          >
+            Capture, organize, and connect your knowledge in one place with
+            AI-powered search for videos, text, tweets, articles, and more.
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="flex justify-center sm:justify-start"
+          >
+            <button className="text-lg tracking-wider sm:text-[14px] bg-purple-600 hover:bg-purple-800 text-white py-2 px-5 rounded-lg mt-8 cursor-pointer shadow-sm shadow-purple-600">
               Get Started Now
             </button>
-          </div>
+          </motion.div>
         </div>
         <img
-          className="rounded-xl sm:rounded-2xl mr-6 ml-4 xl:mx-0"
+          className="hero-image rounded-xl sm:rounded-2xl mr-6 ml-4 xl:mx-0"
           src="/hero-image.png"
           alt="hero image"
         />
