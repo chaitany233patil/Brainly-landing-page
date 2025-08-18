@@ -23,7 +23,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="tracking-wide text-lg text-purple-100/70 text-center font-normal sm:text-start mt-4 leading-6"
+            className="tracking-wide text-lg text-purple-100/70 text-center sm:text-start mt-4 leading-6"
           >
             Capture, organize, and connect your knowledge in one place with
             AI-powered search for videos, text, tweets, articles, and more.
