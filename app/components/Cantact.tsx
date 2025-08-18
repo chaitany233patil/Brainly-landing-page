@@ -28,7 +28,7 @@ export const Contact = () => {
           Join thousands of users who are transforming their knowledge
           management with Second Brain.
         </motion.div>
-        <a href="https://brainly-phi.vercel.app/signup">
+        <a href="https://brainly-pink.vercel.app/">
           <motion.button
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}

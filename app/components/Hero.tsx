@@ -34,7 +34,7 @@ export const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex justify-center sm:justify-start"
           >
-            <a href="https://brainly-phi.vercel.app/signup">
+            <a href="https://brainly-pink.vercel.app/">
               <button className="text-lg tracking-wider sm:text-[14px] bg-purple-600 hover:bg-purple-800 text-white py-2 px-5 rounded-lg mt-8 cursor-pointer shadow-sm shadow-purple-600">
                 Get Started Now
               </button>
