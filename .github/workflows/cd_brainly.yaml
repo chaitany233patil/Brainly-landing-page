@@ -23,5 +23,4 @@ jobs:
           docker build -t chaitanya233/brainly-landing-page:latest .
 
       - name: push to docker Hub
-        run: 
-          docker push chaitanya233/brainly-landing-page:latest 
+        run: docker push chaitanya233/brainly-landing-page:latest
