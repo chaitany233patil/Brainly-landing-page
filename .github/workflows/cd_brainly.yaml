@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t chaitanya233/brainly-landing-page .
+          docker build -t chaitanya233/brainly-landing-page:${{github.sha}} .
 
       - name: push to docker Hub
         run: docker push chaitanya233/brainly-landing-page:${{github.sha}}
